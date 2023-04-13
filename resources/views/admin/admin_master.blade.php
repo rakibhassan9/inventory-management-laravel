@@ -4,13 +4,18 @@
     <head>
         
         <meta charset="utf-8" />
-        <title>Dashboard | Upcube - Admin & Dashboard Template</title>
+        <title>Dashboard | Easy Inventory Shop </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
         <meta content="Themesdesign" name="author" />
 
         <!-- App favicon -->
         <link rel="shortcut icon" href="{{ asset('backend/assets/images/favicon.ico') }}">
+ 
+ <!-- Select 2 -->
+<link href="{{ asset('backend/assets/libs/select2/css/select2.min.css') }}" rel="stylesheet" type="text/css">
+  <!-- end Select 2  -->
+
 
         <!-- jquery.vectormap css -->
         <link href="{{ asset('backend/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css') }}" rel="stylesheet" type="text/css" />
@@ -109,15 +114,12 @@
     case 'info':
     toastr.info(" {{ Session::get('message') }} ");
     break;
-
     case 'success':
     toastr.success(" {{ Session::get('message') }} ");
     break;
-
     case 'warning':
     toastr.warning(" {{ Session::get('message') }} ");
     break;
-
     case 'error':
     toastr.error(" {{ Session::get('message') }} ");
     break; 
@@ -125,6 +127,30 @@
  @endif 
 </script>
 
+ <!-- Required datatable js -->
+        <script src="{{ asset('backend/assets/libs/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+        <script src="{{ asset('backend/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+
+            <!-- Datatable init js -->
+        <script src="{{ asset('backend/assets/js/pages/datatables.init.js') }}"></script>
+
+<script src="{{ asset('backend/assets/js/validate.min.js') }}"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+ <script src="{{ asset('backend/assets/js/code.js') }}"></script>
+
+ 
+  <script src="{{ asset('backend/assets/js/handlebars.js') }}"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/notify/0.4.2/notify.min.js" ></script>
+
+<!--  For Select2 -->
+<script src="{{ asset('backend/assets/libs/select2/js/select2.min.js') }}"></script>
+<script src="{{ asset('backend/assets/js/pages/form-advanced.init.js') }}"></script>
+<!-- end  For Select2 -->
+
     </body>
 
 </html>
+Footer

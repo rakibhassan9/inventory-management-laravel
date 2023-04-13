@@ -13,28 +13,73 @@
 
                             <li>
                                 <a href="index.html" class="waves-effect">
-                                    <i class="ri-dashboard-line"></i><span class="badge rounded-pill bg-success float-end">3</span>
+                                    <i class="ri-dashboard-line"></i>
                                     <span>Dashboard</span>
                                 </a>
                             </li>
 
-                            <li>
-                                <a href="calendar.html" class=" waves-effect">
-                                    <i class="ri-calendar-2-line"></i>
-                                    <span>Calendar</span>
-                                </a>
-                            </li>
                 
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                                     <i class="ri-mail-send-line"></i>
-                                    <span>Email</span>
+                                    <span>Manage Suppliers</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="email-inbox.html">Inbox</a></li>
-                                    <li><a href="email-read.html">Read Email</a></li>
+                                    <li><a href="{{route('supplier.all')}}">All Suppliers</a></li>
                                 </ul>
                             </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="ri-mail-send-line"></i>
+                                    <span>Manage Customer</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="{{route('customer.all')}}">All Customer</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="ri-mail-send-line"></i>
+                                    <span>Manage Unit</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="{{route('unit.all')}}">All Unit</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="ri-apps-2-fill"></i>
+                                    <span>Manage Category</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="{{ route('category.all') }}">All Category</a></li>
+                                
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="ri-apps-2-fill"></i>
+                                    <span>Manage Product</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="{{ route('product.all') }}">All Products</a></li>
+                                
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="ri-apps-2-fill"></i>
+                                    <span>Manage Purchase</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="{{ route('purchase.all') }}">All Purchase</a></li>
+                                    <li><a href="{{ route('purchase.pending') }}">Approval Purchase</a></li>
+                                    <li><a href="{{ route('daily.purchase.report') }}">Daily Purchase Report</a></li>
+                                </ul>
+                                
+                            </li>
+                            
 
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
